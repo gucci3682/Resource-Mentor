@@ -1,0 +1,22 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "ts,json",
+  "exec": "ts-node ./server.ts",
+  "restartable": "rs",
+  "delay": "2500",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "verbose": true,
+  "ignore": [
+    "test/*",
+    "scripts/*.sh",
+    "node_modules/"
+  ],
+  "events": {
+    "restart": "echo 'App restarted due to: $FILENAME'",
+    "crash": "echo 'App crashed' && npm start"
+  }
+}

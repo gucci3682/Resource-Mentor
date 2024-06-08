@@ -1,0 +1,53 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/Resource-Mentor/client
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_PASSWORD: P@ssw0rd
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_HOST: 10.16.0.144
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/Resource-Mentor/server
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    container_name: rm-db
+    environment:
+      POSTGRES_PASSWORD: P@ssw0rd
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: rm-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: gerald.ng@global.ntt
+      PGADMIN_DEFAULT_PASSWORD: P@ssw0rd
+    ports:
+      - "15432:80"
+
+volumes:
+  pg-data:
