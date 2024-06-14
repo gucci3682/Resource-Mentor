@@ -6,6 +6,7 @@ A dockerized web-application aimed to tackle these pain points by engineers with
 
 ## Tech Stack
 Frontend: React, TypeScript
+<br />
 Backend: Express, Node, TypeScript, PostgreSQL
 
 ## Architecture
