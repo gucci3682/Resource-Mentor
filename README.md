@@ -5,9 +5,9 @@ A dockerized web-application aimed to tackle these pain points by engineers with
 - Inefficient allocation of resources due to lack of visibility and analytics of engineers' time
 
 ## Tech Stack
-Frontend: React, TypeScript
+Frontend: ReactJS
 <br />
-Backend: Express, Node, TypeScript, PostgreSQL
+Backend: ExpressJS, NodeJS, PostgreSQL
 
 ## Architecture
 ![image](https://github.com/gucci3682/Resource-Mentor/assets/122253637/aaaf232c-f445-466f-bae7-44ff7b8ddede)
