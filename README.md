@@ -11,4 +11,4 @@ Backend: Express, Node, TypeScript, PostgreSQL
 ## Architecture
 ![image](https://github.com/gucci3682/Resource-Mentor/assets/122253637/aaaf232c-f445-466f-bae7-44ff7b8ddede)
 
-Co-developed with @farzaanaxd
+Co-developed with [@farzaanaxd](https://github.com/farzaanaxd)
