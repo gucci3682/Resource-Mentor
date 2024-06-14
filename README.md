@@ -5,7 +5,7 @@ A dockerized web-application aimed to tackle these pain points by engineers with
 - Inefficient allocation of resources due to lack of visibility and analytics of engineers' time
 
 ## Tech Stack
-Client: React, TypeScript
+Frontend: React, TypeScript
 Backend: Express, Node, TypeScript, PostgreSQL
 
 ## Architecture
